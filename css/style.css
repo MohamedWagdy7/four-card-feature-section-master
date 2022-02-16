@@ -1,0 +1,104 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.padding-class{
+    padding: 2em 1em;
+}
+span{
+    font-weight: 200;
+    display: block;
+    margin-bottom: -1em; 
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+h1,
+body > p{
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+}
+h1{
+    font-weight: 600;
+}
+body>p{
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.one-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.one-two section{
+    width: 100%;
+    margin-top: 2em;
+}
+section{
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    line-height: 1.5;
+    transition: .5s;
+}
+.one{
+    border-top: hsl(0, 78%, 62%) 3px solid;
+}
+.two{
+    border-top: hsl(34, 97%, 64%) 3px solid;
+}
+.three{
+    border-top: hsl(180, 62%, 55%) 3px solid;
+}
+.four{
+    border-top: hsl(212, 86%, 64%) 3px solid;
+}
+section p{
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+section img{
+margin-top: 1em;
+padding: 0em 0em 0em 18em;
+}
+section:hover{
+    transform: scale(1.2);
+}
+@media (width: 1440px) {
+    .three{
+        margin-right: -4em;
+    }
+    .four{
+        margin-left: -4em;
+    }
+    body{
+        margin: auto;
+        overflow-x: hidden;
+        width: 85%;
+    }
+
+}
+@media (width: 375px) {
+    main{
+        width: 96%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1em;
+    }
+    section{
+        margin-right: -1em;
+    }
+    section:hover{
+        transform: scale(1);
+    }
+}
